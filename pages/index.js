@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Link from 'next/link';
 
 function Header({ title }) {
   // console.log(title)
@@ -9,7 +10,7 @@ function Header({ title }) {
 function HomePage() {
   const [likes, setLikes] = useState(0);
 
-  const names = ['Ada Lovelace', 'Grace Hopper', 'Margaret Hamilton'];
+  const names = ['Senior at Clarkson University', 'Studying Computer Science and Mathematics', 'resume link posting soon'];
 
   function handleClick() {
     console.log("increment like count")
@@ -18,7 +19,8 @@ function HomePage() {
 
 
   return <div>
-    <Header title="Develop. Preview. Shit. 🚀" />
+    <Link href="/posts/first-post">helo</Link>
+    <Header title="Alex Cohen" />
     <ul>
       {names.map((name) => (
         <li key={name}>{name}</li>
