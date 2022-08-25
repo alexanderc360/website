@@ -46,7 +46,7 @@ function layout({ children, home }) {
                             </a>
                         </Link>
                         <h2 className={utilStyles.headingLg}>
-                            <Link href="/">
+                            <Link href="/about">
                                 <a className={utilStyles.colorInherit}>{name}</a>
                             </Link>
                         </h2>
